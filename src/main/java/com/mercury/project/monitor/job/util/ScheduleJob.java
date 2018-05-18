@@ -33,7 +33,7 @@ public class ScheduleJob extends QuartzJobBean
     {
         Job job = (Job) context.getMergedJobDataMap().get(ScheduleConstants.JOB_PARAM_KEY);
 
-        IJobLogService jobLogService = (IJobLogService) SpringUtils.getBean(IJobLogService.class);
+        IJobLogService jobLogService = SpringUtils.getBean(IJobLogService.class);
 
         JobLog jobLog = new JobLog();
         jobLog.setJobName(job.getJobName());

@@ -26,7 +26,11 @@ public class IndexController extends BaseController
     @Autowired
     private MercuryConfig mercuryConfig;
 
-    // 系统首页
+    /**
+     * 系统首页
+     * @param model Model
+     * @return String
+     */
     @GetMapping("/index")
     public String index(Model model)
     {
@@ -40,7 +44,11 @@ public class IndexController extends BaseController
         return "index";
     }
 
-    // 系统介绍
+    /**
+     * 系统介绍
+     * @param model Model
+     * @return String
+     */
     @GetMapping("/system/main")
     public String main(Model model)
     {

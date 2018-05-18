@@ -87,7 +87,12 @@ public class OnlineSessionFilter extends AccessControlFilter
         return true;
     }
 
-    // 跳转到登录页
+    /**
+     * 跳转到登录页
+     * @param request ServletRequest
+     * @param response ServletResponse
+     * @throws IOException a
+     */
     @Override
     protected void redirectToLogin(ServletRequest request, ServletResponse response) throws IOException
     {

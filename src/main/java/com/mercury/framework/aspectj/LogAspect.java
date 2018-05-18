@@ -38,7 +38,9 @@ public class LogAspect
     @Autowired
     private IOperLogService operLogService;
 
-    // 配置织入点
+    /**
+     * 配置织入点
+     */
     @Pointcut("@annotation(com.mercury.framework.aspectj.lang.annotation.Log)")
     public void logPointCut()
     {

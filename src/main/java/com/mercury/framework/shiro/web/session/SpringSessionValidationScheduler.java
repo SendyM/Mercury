@@ -98,15 +98,10 @@ public class SpringSessionValidationScheduler implements SessionValidationSchedu
 
         try
         {
-            executorService.scheduleAtFixedRate(new Runnable()
-            {
-                @Override
-                public void run()
+            executorService.scheduleAtFixedRate( () -> {
+                if (enabled)
                 {
-                    if (enabled)
-                    {
-                        sessionManager.validateSessions();
-                    }
+                    sessionManager.validateSessions();
                 }
             }, 1000, sessionValidationInterval, TimeUnit.MILLISECONDS);
 

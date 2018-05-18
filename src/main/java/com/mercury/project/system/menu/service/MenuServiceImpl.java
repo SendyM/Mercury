@@ -155,7 +155,7 @@ public class MenuServiceImpl implements IMenuService
         List<Map<String, Object>> trees = new ArrayList<Map<String, Object>>();
         for (Menu menu : menuList)
         {
-            Map<String, Object> deptMap = new HashMap<String, Object>();
+            Map<String, Object> deptMap = new HashMap<>();
             deptMap.put("id", menu.getMenuId());
             deptMap.put("pId", menu.getParentId());
             deptMap.put("name", transMenuName(menu, roleMenuList, permsFlag));

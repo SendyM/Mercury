@@ -1,6 +1,8 @@
 package com.mercury.project.system.post.service;
 
 import java.util.List;
+import java.util.Objects;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.mercury.common.utils.StringUtils;
@@ -61,7 +63,7 @@ public class PostServiceImpl implements IPostService
         {
             for (Post userRole : userPosts)
             {
-                if (post.getPostId() == userRole.getPostId())
+                if (Objects.equals( post.getPostId(), userRole.getPostId() ))
                 {
                     post.setFlag(true);
                     break;

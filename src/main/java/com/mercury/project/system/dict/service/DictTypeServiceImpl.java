@@ -1,6 +1,8 @@
 package com.mercury.project.system.dict.service;
 
 import java.util.List;
+import java.util.Objects;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.mercury.common.constant.UserConstants;
@@ -105,7 +107,7 @@ public class DictTypeServiceImpl implements IDictTypeService
         }
         Long dictId = dict.getDictId();
         DictType dictType = dictTypeMapper.checkDictTypeUnique(dict.getDictType());
-        if (StringUtils.isNotNull(dictType) && dictType.getDictId() != dictId)
+        if (StringUtils.isNotNull(dictType) && !Objects.equals( dictType.getDictId(), dictId ))
         {
             return UserConstants.NAME_NOT_UNIQUE;
         }

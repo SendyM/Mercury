@@ -49,7 +49,7 @@ public class DeptServiceImpl implements IDeptService
         {
             if (UserConstants.DEPT_NORMAL == dept.getStatus())
             {
-                Map<String, Object> deptMap = new HashMap<String, Object>();
+                Map<String, Object> deptMap = new HashMap<>();
                 deptMap.put("id", dept.getDeptId());
                 deptMap.put("pId", dept.getParentId());
                 deptMap.put("name", dept.getDeptName());
