@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <head th:include="include :: header"></head>
 <link href="/ajax/libs/jquery-ztree/3.5/css/metro/zTreeStyle.css" th:href="@{/ajax/libs/jquery-ztree/3.5/css/metro/zTreeStyle.css}" rel="stylesheet"/>
-<link href="/ruoyi/css/RuoYi.css" th:href="@{/ruoyi/css/RuoYi.css}" rel="stylesheet"/>
+<link href="/mercury/css/Mercury.css" th:href="@{/mercury/css/Mercury.css}" rel="stylesheet"/>
 <style>
 body{height:auto;font-family: "Microsoft YaHei";}
 button{font-family: "SimSun","Helvetica Neue",Helvetica,Arial;}
@@ -31,7 +31,7 @@ button{font-family: "SimSun","Helvetica Neue",Helvetica,Arial;}
 	</div>
 	<div th:include="include::footer"></div>
 	<script src="/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js" th:src="@{/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js}"></script>
-	<script src="/ruoyi/system/dept/tree.js" th:src="@{/ruoyi/system/dept/tree.js}"></script>
+	<script src="/mercury/system/dept/tree.js" th:src="@{/mercury/system/dept/tree.js}"></script>
 	<script th:inline="javascript">
 		var treeName = [[${treeName}]];
 		$("#treeName").val(treeName);

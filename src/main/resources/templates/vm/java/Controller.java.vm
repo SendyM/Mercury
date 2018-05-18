@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import ${package}.domain.${className};
 import ${package}.service.I${className}Service;
-import com.ruoyi.framework.web.controller.BaseController;
-import com.ruoyi.framework.web.page.TableDataInfo;
-import com.ruoyi.framework.web.domain.Message;
+import com.mercury.framework.web.controller.BaseController;
+import com.mercury.framework.web.page.TableDataInfo;
+import com.mercury.framework.web.domain.Message;
 
 /**
  * ${tableComment} 信息操作处理

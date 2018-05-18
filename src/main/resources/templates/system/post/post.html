@@ -18,7 +18,7 @@
 		</table>
 	</div>
 	<div th:include="include :: footer"></div>
-	<script src="/ruoyi/system/post/post.js" th:src="@{/ruoyi/system/post/post.js}"></script>
+	<script src="/mercury/system/post/post.js" th:src="@{/mercury/system/post/post.js}"></script>
 	<script th:inline="javascript">
 		var editFlag = [[${@permissionService.hasPermi('system:post:edit')}]];
 		var removeFlag = [[${@permissionService.hasPermi('system:post:remove')}]];

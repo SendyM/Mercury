@@ -1,6 +1,6 @@
 package ${package}.domain;
 
-import com.ruoyi.framework.web.domain.BaseEntity;
+import com.mercury.framework.web.domain.BaseEntity;
 #if(${hasBigDecimal})
 import java.math.BigDecimal;
 #end

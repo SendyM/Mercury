@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<property name="log_home" value="logs/ruoyi" />
+	<property name="log_home" value="logs/mercury" />
 
 	<!-- 控制台输出 -->
 	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
@@ -43,7 +43,7 @@
 		<logger name="org.springframework.jdbc" level="debug" />
 	-->
 
-	<logger name="com.ruoyi" level="info" />
+	<logger name="com.mercury" level="info" />
 
 	<root level="info">
 		<appender-ref ref="stdout" />

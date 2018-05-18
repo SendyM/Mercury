@@ -3,7 +3,7 @@ package ${package}.service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.utils.StringUtils;
+import com.mercury.common.utils.StringUtils;
 import ${package}.mapper.${className}Mapper;
 import ${package}.domain.${className};
 import ${package}.service.I${className}Service;
